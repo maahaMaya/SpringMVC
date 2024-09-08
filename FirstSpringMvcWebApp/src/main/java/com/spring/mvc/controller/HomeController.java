@@ -27,8 +27,12 @@ public class HomeController {
 	}
 
 	@RequestMapping(path="/login")
-	public String loginPage() {
-		return "login";
+	public ModelAndView loginPage() {
+		ModelAndView modelAndView = new ModelAndView();
+		modelAndView.addObject("Dept", "CSE");
+		modelAndView.addObject("Reg.No.", 467785);
+		modelAndView.setViewName("login");
+		return modelAndView;
 	}
 
 }

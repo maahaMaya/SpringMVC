@@ -8,5 +8,11 @@
 </head>
 <body>
 	<h1>Welcome to Login Page</h1>
+	
+	<% String departmentNameIs = (String)request.getAttribute("Dept"); %>
+	<% Integer myRegNoIs = (Integer)request.getAttribute("Reg.No."); %>
+	
+	<h2>Department is : <%= departmentNameIs %></h2>
+	<h2>Reg. No. is : <%= myRegNoIs %></h2>
 </body>
 </html>
