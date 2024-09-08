@@ -10,8 +10,7 @@
 	<url>http://maven.apache.org</url>
 	<dependencies>
 
-		<!--
-		https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
+		<!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
@@ -23,7 +22,8 @@
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
 		</dependency>
-		
+
+
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
