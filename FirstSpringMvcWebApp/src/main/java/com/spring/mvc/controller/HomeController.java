@@ -13,7 +13,16 @@ import org.springframework.web.servlet.ModelAndView;
 public class HomeController {
 
 	@RequestMapping("/home")
-	public String home() {
+	public String home(Model model) {
+		model.addAttribute("myName", "Sourav");
+		model.addAttribute("myId", 289263);
+		
+		List<String> myMarks = new ArrayList<String>();
+		myMarks.add("CSE : 99");
+		myMarks.add("IT : 90");
+		
+		model.addAttribute("myMarksList", myMarks);
+		
 		return "home";
 	}
 
